@@ -27,11 +27,5 @@ services:
       - .env
     depends_on:
       - mongo
-
-  mongo-seed:
-    build: ./mongo-seed
-    depends_on:
-      - mongo
-
 volumes:
   db-data:
